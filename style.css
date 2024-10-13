@@ -1,64 +1,63 @@
 html, header, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Calibri', sans-serif;
-    background-color: #f6f6f6;
+    margin: 0; /*Definindo a margem como 0*/
+    padding: 0; /*Definindo o espacamento como 0*/
+    height: 100%; /*a altura vai sempre cobrir o maximo possivel*/
+    font-family: 'Calibri', sans-serif; /*Fontes textuais*/
+    background-color: #f6f6f6; /*Fndo 'branco' do site*/
 }
 .imagem_cell{
-    display: none;
+    display: none;/*Imagem que so vai aparecer no celular*/
 }
 .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    display: flex;/*Elemento flexivel, vai ajudar a tornar o site agradavel em diversos pcs*/
+    flex-direction: column;/*Direção dos elementos, nesse caso para baixo*/
+    min-height: 100vh; /*altura minima é o espaço disponivel*/
 }
 .infos{
-    color: #ffffff;
-    width: 100%;
+    color: #ffffff; /*cor do texto*/
+    width: 100%; /*largura ocupando a tela toda*/
     display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: space-between;
+    flex-direction: row;/*Direção dos elementos, nesse caso para baixo*/
+    align-items: start;/*alinhamento dos itens nesse caso da direita para esquerda*/
+    justify-content: space-between; /*disposição dos elementos, nesse caso ele jodga para os 2 cantos*/
 }
 .pessoas, .resto{
     height: 100vh;
     max-height: 520px;
 /*essas duas linhas são provisórias, depois tirar*/
-    margin-top: 0;
-    line-height: 1.7;
+    margin-top: 0; /*tirando a margem do topo*/
+    line-height: 1.7; /*aumentando o espaço entre as linhas*/
     display: flex;
     flex-direction: column;
-    background-color: #105dfb;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    background-color: #105dfb;/*cor do fundo*/
+    padding-left: 20px;/*espaçamento na esquerda*/
+    padding-right: 20px;/*espaçamento na direita*/
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);/*adicionando umas sombras aos elementos*/
 }
 .pessoas{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;/*arredondando o canto superior direito*/
+    border-bottom-right-radius: 20px;/*arredondando o canto inferior direito*/
 }
 .pessoas ul {
-    list-style-type: disc;
     padding-left: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 20px;/*espaçamento embaixo*/
     margin: 0;
 }
 .resto{
     padding-left: 10px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    text-align: center;
-    line-height: 0.7;
+    text-align: center;/*alinhando o texto no meio*/
+    line-height: 0.7;/*diminuindo o espaço entre as linhas*/
 }
 .resto img{
-    max-width: 300px;
-    height: auto;
+    max-width: 300px;/*definindo a largura da log com no maximo 300 pixels*/
+    height: auto;/*altura automatica, vai preservar a proporcionalidade*/
 }
 .textos{
     display: flex;
     flex-direction: column;
-    padding: 2% 7% 2% 5%;
+    padding: 2% 7% 2% 5%;/*espacamento no topo, direita, embaixo e esquerda respectivamente*/
 }
 .resumo{
     max-width: 800px;
@@ -66,7 +65,7 @@ html, header, body {
     text-align: center;
     line-height: 1.6;
     color: #555;
-    padding-bottom: 1000px;
+    padding-bottom: 1000px;/*esse espaçamento é só para poder escrollar a página, tem que tira ddepois*/
 }
 .resumo h1 {
     margin-bottom: 10px;
@@ -74,15 +73,9 @@ html, header, body {
 }
 /* Responsividade (ta bugado)*/
 @media screen and (max-width: 480px) {
-    .pessoas, .resto {
-        padding: 10px;
-    }
-
-    .textos {
-        padding: 3%;
-    }
-
-    .resumo {
-        line-height: 1.4;
+    .imagem_cell{
+        display: block;
+        width: 100vh;
+        height: auto;
     }
 }
