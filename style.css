@@ -9,9 +9,31 @@ html, header, body {
     display: none;/*Imagem que so vai aparecer no celular*/
 }
 .container {
-    display: flex;/*Elemento flexivel, vai ajudar a tornar o site agradavel em diversos pcs*/
-    flex-direction: column;/*Direção dos elementos, nesse caso para baixo*/
-    min-height: 100vh; /*altura minima é o espaço disponivel*/
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.conteudo-lateral {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.imagem-lateral {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    background-color: transparent;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.imagem-lateral img {
+    box-shadow: none;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 .infos{
     color: #ffffff; /*cor do texto*/
@@ -29,7 +51,7 @@ html, header, body {
     line-height: 1.7; /*aumentando o espaço entre as linhas*/
     display: flex;
     flex-direction: column;
-    background-color: #105dfb;/*cor do fundo*/
+    background-color: #467485;/*cor do fundo*/
     padding-left: 10px;/*espaçamento na esquerda*/
     padding-right: 10px;/*espaçamento na direita*/
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);/*adicionando umas sombras aos elementos*/
@@ -72,6 +94,7 @@ html, header, body {
     height: auto;/*altura automatica, vai preservar a proporcionalidade*/
 }
 .textos{
+    padding-top: 0;
     max-width: 800px;
     text-align: center;
     color: #555;
@@ -79,7 +102,7 @@ html, header, body {
     margin: 0 auto;
 }
 .textos h1{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #333;
 }
 .textos img{
@@ -90,40 +113,13 @@ html, header, body {
 }
 /*padronização dos textos (a depender do caso terá que ser mudado)*/
 .resumo{
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 .introducao {
     display: flex;
     flex-direction: row;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 .introducao img {
     margin-left: 40px;
-}
-.desenvolvimento{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 60px;
-}
-.desenvolvimento img{
-    margin-right: 40px;
-    
-}
-.conclusao{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 60px;
-}
-.conclusao img{
-    margin-top: 40px;
-    width: 800px; 
-   
-}
-/* Responsividade (ta bugado)*/
-@media screen and (max-width: 480px) {
-    .imagem_cell{
-        display: block;
-        width: 100vh;
-        height: auto;
-    }
 }
