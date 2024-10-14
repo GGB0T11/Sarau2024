@@ -79,7 +79,7 @@ html, header, body {
     margin: 0 auto;
 }
 .textos h1{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #333;
 }
 .textos img{
@@ -90,15 +90,34 @@ html, header, body {
 }
 /*padronização dos textos (a depender do caso terá que ser mudado)*/
 .resumo{
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .introducao {
     display: flex;
     flex-direction: row;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .introducao img {
     margin-left: 40px;
+}
+.desenvolvimento{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+.desenvolvimento img{
+    margin-right: 40px;
+    
+}
+.conclusao{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.conclusao img{
+    margin-top: 40px;
+    width: 800px; 
+   
 }
 /* Responsividade (ta bugado)*/
 @media screen and (max-width: 480px) {
