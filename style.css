@@ -117,10 +117,6 @@ html, header, body {
     flex-direction: row;
     margin-bottom: 60px;
 }
-.desenvolvimento_texto{
-    text-align: left;
-    flex-direction: column;
-}
 .desenvolvimento img{
     margin-right: 40px;
     
@@ -134,12 +130,5 @@ html, header, body {
     margin-top: 40px;
     width: 800px; 
     max-height: 200px;
-}
-.referencias{
-    text-align: start;
-    margin-left: 40px;
-    padding-bottom: 80px;
-}
-.referencias ul{
-    text-align: start;
+   
 }
