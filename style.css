@@ -1,13 +1,10 @@
 html, header, body {
-    margin: 0; /*Definindo a margem como 0*/
-    padding: 0; /*Definindo o espacamento como 0*/
-    height: 100%; /*a altura vai sempre cobrir o maximo possivel*/
-    font-family: 'Calibri', sans-serif; /*Fontes textuais*/
-    background-color: #f6f6f6; /*Fndo 'branco' do site*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri', sans-serif;
+    background-color: #f6f6f6;
 }
-.imagem_cell{
-    display: none;/*Imagem que so vai aparecer no celular*/
-}
+
 .container {
     display: flex;
     justify-content: center;
@@ -16,54 +13,46 @@ html, header, body {
 .conteudo-lateral {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-}
-.imagem-lateral {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0;
-    background-color: transparent;
-    margin-left: 30px;
-    margin-right: 30px;
+    align-items: stretch;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
-.imagem-lateral img {
-    box-shadow: none;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+.imagem-lateral {
+    width: 160px;
+    background-image: url('assets/detalhe.png');
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-position: center;
 }
 .infos{
-    color: #ffffff; /*cor do texto*/
-    width: 100%; /*largura ocupando a tela toda*/
+    color: #ffffff;
+    width: 100%;
     display: flex;
-    flex-direction: row;/*Direção dos elementos, nesse caso para baixo*/
-    align-items: start;/*alinhamento dos itens nesse caso da direita para esquerda*/
-    justify-content: space-between; /*disposição dos elementos, nesse caso ele jodga para os 2 cantos*/
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
 }
 .pessoas, .resto{
     height: 100vh;
     max-height: 520px;
-/*essas duas linhas são provisórias, depois tirar*/
-    margin-top: 0; /*tirando a margem do topo*/
-    line-height: 1.7; /*aumentando o espaço entre as linhas*/
+    margin-top: 0;
+    line-height: 1.7;
     display: flex;
     flex-direction: column;
-    background-color: #467485;/*cor do fundo*/
-    padding-left: 10px;/*espaçamento na esquerda*/
-    padding-right: 10px;/*espaçamento na direita*/
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);/*adicionando umas sombras aos elementos*/
+    background-color: #467485;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
 }
 .pessoas{
     min-width: 300px;
-    border-top-right-radius: 20px;/*arredondando o canto superior direito*/
-    border-bottom-right-radius: 20px;/*arredondando o canto inferior direito*/
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .pessoas ul {
     padding-left: 20px;
-    padding-bottom: 20px;/*espaçamento embaixo*/
+    padding-bottom: 20px;
     margin: 0;
 }
 .pessoas h2{
@@ -71,31 +60,32 @@ html, header, body {
 }
 .imagem_pc {
     display: flex;
-    justify-content: center; /* Centraliza a imagem horizontalmente */
-    align-items: center; /* Centraliza a imagem verticalmente */
-    background-color: transparent; /* Pode ser transparente ou outra cor, dependendo do design */
-    padding: 10px; /* Adiciona um pequeno espaçamento ao redor da imagem */
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
 }
 .imagem_pc img {
     max-width: 100%;
-    height: auto; /* Garante que a imagem mantenha sua proporção */
-    border-radius: 10px; /* Deixa a imagem com cantos arredondados, opcional */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Adiciona uma leve sombra para destaque */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 .resto{
     padding-left: 10px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    text-align: center;/*alinhando o texto no meio*/
-    line-height: 0.7;/*diminuindo o espaço entre as linhas*/
+    text-align: center;
+    line-height: 0.7;
 }
 .resto img{
-    max-width: 290px;/*definindo a largura da log com no maximo 300 pixels*/
-    height: auto;/*altura automatica, vai preservar a proporcionalidade*/
+    max-width: 290px;
+    height: auto;
 }
 .textos{
     padding-top: 0;
     max-width: 800px;
+    padding: 0 80px;
     text-align: center;
     color: #555;
     line-height: 1.6;
@@ -111,7 +101,6 @@ html, header, body {
     height: auto;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
-/*padronização dos textos (a depender do caso terá que ser mudado)*/
 .resumo{
     margin-bottom: 40px;
 }
@@ -122,4 +111,24 @@ html, header, body {
 }
 .introducao img {
     margin-left: 40px;
+}
+.desenvolvimento{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+.desenvolvimento img{
+    margin-right: 40px;
+    
+}
+.conclusao{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.conclusao img{
+    margin-top: 40px;
+    width: 800px; 
+    max-height: 200px;
+   
 }
