@@ -58,14 +58,14 @@ html, header, body {
 .pessoas h2{
     line-height: 0.7;
 }
-.imagem_pc {
+.banner {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
     padding: 10px;
 }
-.imagem_pc img {
+.banner img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -117,6 +117,10 @@ html, header, body {
     flex-direction: row;
     margin-bottom: 60px;
 }
+.desenvolvimento_texto{
+    text-align: left;
+    flex-direction: column;
+}
 .desenvolvimento img{
     margin-right: 40px;
     
@@ -130,5 +134,38 @@ html, header, body {
     margin-top: 40px;
     width: 800px; 
     max-height: 200px;
-   
+}
+.referencias{
+    text-align: start;
+    margin-left: 40px;
+    padding-bottom: 80px;
+}
+.referencias ul{
+    text-align: start;
+}
+.aviso-mobile {
+    display: none; /* Hide by default */
+    text-align: center;
+    background-color: #ffdddd;
+    color: #333;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .aviso-mobile {
+        display: block; /* Show the message for small screens */
+    }
+    .container{
+        display: none;
+    }
+    .infos{
+        display: none;
+    }
 }
