@@ -2,6 +2,9 @@ html, header, body {
     font-family: 'Calibri', sans-serif;
     background-color: #f6f6f6;
 }
+.banner_mobile img{
+    display: none;
+}
 .banner img, .introducao img, .desenvolvimento img, .conclusao img{
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
@@ -13,13 +16,13 @@ html, header, body {
     display: flex;
     justify-content: center;
 }
-.conteudo-lateral {
+.conteudo_lateral {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.imagem-lateral {
+.imagem_lateral {
     width: 160px;
     background-image: url('assets/detalhe.png');
     background-size: contain;
@@ -35,6 +38,7 @@ html, header, body {
 }
 .pessoas, .resto {
     margin-top: 0;
+    font-weight: bold;
     line-height: 1.7;
     display: flex;
     flex-direction: column;
@@ -42,7 +46,6 @@ html, header, body {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
 }
 .pessoas {
-    font-weight: bold;
     width: 40%;
     border-radius: 0px 20px 20px 0px;
 }
@@ -66,7 +69,9 @@ html, header, body {
 .resto {
     padding-left: 10px;
     border-radius: 20px 0px 0px 20px;
+    align-items: center;
     text-align: center;
+    justify-content: center;
     line-height: 0.7;
 }
 .resto img {
@@ -77,10 +82,6 @@ html, header, body {
     text-align: center;
     color: #555;
     line-height: 1.6;
-}
-.textos h1, .textos h3{
-    margin-bottom: 10px;
-    color: #333;
 }
 .introducao {
     display: flex;
@@ -106,10 +107,7 @@ html, header, body {
     width: 100%; 
     max-height: 200px;
 }
-.referencias, .referencias ul {
-    text-align: left;
-}
-.moodle{
+.referencias, .referencias ul, .moodle {
     text-align: left;
 }
 .aviso-mobile {
@@ -126,14 +124,44 @@ html, header, body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 16px;
 }
-@media (max-width: 768px) {
-    .aviso-mobile {
-        display: block;
-    }
-    .container {
+@media (max-width: 480px) {
+    .banner, .imagem_lateral {
         display: none;
     }
-    .infos {
-        display: none;
+    .infos, .banner_mobile img {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    }
+    .banner_mobile img {
+        display: flex;
+        width: 100%;
+        margin-bottom: 30px;
+        border-radius: 0px 0px 20px 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    }
+    .pessoas, .resto{
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .pessoas {
+        width: 60%;
+        font-size: 12px;
+    }
+    .resto {
+        width: 40%;
+        padding: 10px;
+    }
+    .textos {
+        margin-top: 30px;
+        max-width: 400px;
+        font-size: 12px;
+    }
+    .introducao img {
+        margin-left: 20px;
+    }
+    .resto img, .introducao img, .desenvolvimento img {
+        width: 100px;
+    }
+    .conclusao img {
+        margin-top: 10px;
     }
 }
