@@ -152,7 +152,7 @@ html, header, body {
     }
     .textos {
         margin-top: 30px;
-        max-width: 400px;
+        max-width: 320px;
         font-size: 12px;
     }
     .introducao img {
@@ -161,7 +161,16 @@ html, header, body {
     .resto img, .introducao img, .desenvolvimento img {
         width: 100px;
     }
+    .desenvolvimento img {
+        margin-right: 20px;
+    }
+    .desenvolvimento ol, .desenvolvimento ul {
+        padding-left: 15px;
+    }
     .conclusao img {
         margin-top: 10px;
+    }
+    .moodle a {
+        word-wrap: break-word;
     }
 }
