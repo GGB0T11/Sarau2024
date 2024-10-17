@@ -78,6 +78,10 @@ html, header, body {
     color: #555;
     line-height: 1.6;
 }
+.textos h1, .textos h3{
+    margin-bottom: 10px;
+    color: #333;
+}
 .introducao {
     display: flex;
     flex-direction: row;
@@ -103,6 +107,9 @@ html, header, body {
     max-height: 200px;
 }
 .referencias, .referencias ul {
+    text-align: left;
+}
+.moodle{
     text-align: left;
 }
 .aviso-mobile {
