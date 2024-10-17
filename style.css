@@ -110,20 +110,6 @@ html, header, body {
 .referencias, .referencias ul, .moodle {
     text-align: left;
 }
-.aviso-mobile {
-    display: none;
-    text-align: center;
-    background-color: #ffdddd;
-    color: #333;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-}
 @media (max-width: 480px) {
     .banner, .imagem_lateral {
         display: none;
@@ -136,7 +122,6 @@ html, header, body {
         width: 100%;
         margin-bottom: 30px;
         border-radius: 0px 0px 20px 20px;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
     }
     .pessoas, .resto{
         border-radius: 0;
